@@ -9,12 +9,15 @@ const express = require('express');
 const app = express();
 
 const logger = require('./middleware/logger.js');
+const validator = require('./middleware/validator.js');
 const errors = require('./error-handlers/500.js');
 const notFound = require('./error-handlers/404.js');
+
 
 // global -> app level middleware
 app.use(express.json());
 app.use(logger);
+app.use(validator);
 
 // build out routes - querystrings & request parameters
 // built out middleware
@@ -24,10 +27,14 @@ app.use(logger);
 // req.path = '/hello'
 // req.query = { name: 'brian', role: 'instructor' }
 
+app.get('/person', validator, (req, res) => {
+        res.send({name:req.query.name});
+});
+
 // old way - with query strings
 // http://localhost:3333/hello?
 app.get('/hello', (req, res) => {
-  // console.log('name', req.query.name);
+  console.log('name', req.query.name);
   res.send(`hello ${req.query.user}`);
 });
 
@@ -70,3 +77,12 @@ module.exports = {
     })
   }
 }
+
+// app.get('/person', validator, (req, res) => {
+//     if (req.query.name){
+//         res.send({name:req.query.name});
+//     }
+//     else {
+//         res.status(500).send("not found");
+//     }
+// });
