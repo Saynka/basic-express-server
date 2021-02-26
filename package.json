@@ -4,6 +4,7 @@
   "description": "├── .gitignore ├── .eslintrc.json ├── __tests__ │   ├── server.test.js │   ├── validator.test.js │   ├── logger.test.js ├── src │   ├── error-handlers │   │   ├── 404.js │   │   ├── 500.js │   ├── middleware │   │   ├── logger.js │   │   ├── validator.js │   ├── server.js ├── index.js └── package.json",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/Saynka/basic-express-server#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jest": "^26.6.3",
     "logger": "^0.0.1",
