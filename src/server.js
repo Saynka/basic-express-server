@@ -17,7 +17,6 @@ const notFound = require('./error-handlers/404.js');
 // global -> app level middleware
 app.use(express.json());
 app.use(logger);
-app.use(validator);
 
 // build out routes - querystrings & request parameters
 // built out middleware
@@ -28,7 +27,7 @@ app.use(validator);
 // req.query = { name: 'brian', role: 'instructor' }
 
 app.get('/person', validator, (req, res) => {
-        res.send({name:req.query.name});
+        res.json({name:req.query.name});
 });
 
 // old way - with query strings
