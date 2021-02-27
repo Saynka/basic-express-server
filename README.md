@@ -12,6 +12,11 @@
 - [back-end server url](http://xyz.com) (when applicable)
 - [front-end application](http://xyz.com) (when applicable)
 
+#### Pull-Requests
+* [first push](https://github.com/Saynka/basic-express-server/pull/1/files)
+* [bugs](https://github.com/Saynka/basic-express-server/pull/2/files)
+* []()
+
 ### Setup
 
 #### `.env` requirements (where applicable)
@@ -60,8 +65,3 @@ i.e.
 
 * https://basic-express-servers.herokuapp.com/
 
-## Pull-Requests
-
-* [first push](https://github.com/Saynka/basic-express-server/pull/1/files)
-* [bugs](https://github.com/Saynka/basic-express-server/pull/2/files)
-* []()
