@@ -8,14 +8,14 @@
 
 ### Links and Resources
 
-- [ci/cd](http://xyz.com) (GitHub Actions)
+- [ci/cd](https://github.com/Saynka/basic-express-server/actions/runs/605996534) (GitHub Actions)
 - [back-end server url](http://xyz.com) (when applicable)
 - [front-end application](http://xyz.com) (when applicable)
 
 #### Pull-Requests
 * [first push](https://github.com/Saynka/basic-express-server/pull/1/files)
 * [bugs](https://github.com/Saynka/basic-express-server/pull/2/files)
-* []()
+* [finished](https://github.com/Saynka/basic-express-server/compare/dev?expand=1)
 
 ### Setup
 
